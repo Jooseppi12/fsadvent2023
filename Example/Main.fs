@@ -67,7 +67,7 @@ module Main =
 
             // Defining a validator for an option value that is required
             let dateValidator =
-                Check.required (Check.DateTime.greaterThan DateTime.Now)
+                Check.required (Check.WithMessage.DateTime.greaterThan DateTime.Now (fun d -> sprintf "%s must be greater than %s" d <| DateTime.Now.ToShortDateString()))
 
             validate {
             let! first = nameValidator "First name" dto.FirstName
