@@ -6,5 +6,8 @@ export default defineConfig({
   optimizeDeps:{},
   build: {
     outDir: "dist"
+  },
+  shared: {
+    base: "fsadvent2023"
   }
 })
