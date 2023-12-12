@@ -1,0 +1,3 @@
+[submodule "Validus"]
+	path = Validus
+	url = https://github.com/pimbrouwers/Validus
