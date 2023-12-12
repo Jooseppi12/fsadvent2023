@@ -15,12 +15,14 @@ jobs:
           
       - name: npm install
         run: npm install
+        working-directory: Example
 
       - name: Building project
         run: dotnet build
 
       - name: Build with vite
         run: npx vite build
+        working-directory: Example
 
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
