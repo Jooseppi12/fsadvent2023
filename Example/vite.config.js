@@ -7,7 +7,5 @@ export default defineConfig({
   build: {
     outDir: "dist"
   },
-  shared: {
-    base: "fsadvent2023"
-  }
+  base: "/fsadvent2023/"
 })
