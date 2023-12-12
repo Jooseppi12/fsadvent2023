@@ -7,5 +7,5 @@ module Proxies =
 
     // Proxy for Regex.IsMatch function
     [<Proxy(typeof<System.Text.RegularExpressions.Regex>)>]
-    type internal RegexProxy =
+    type RegexProxy =
         static member IsMatch(toMatch: string, pattern: string) = RegExp(pattern).Test toMatch

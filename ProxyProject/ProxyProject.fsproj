@@ -10,7 +10,7 @@
     <Compile Include="../Validus/src/Validus/Validators.Default.fs" />
     <Compile Include="../Validus/src/Validus/Check.fs" />
     <Compile Include="../Validus/src/Validus/Operators.fs" />
-    <Compile Include="Library.fs" />
+    <Compile Include="Proxy.fs" />
     <None Include="wsconfig.json" />
   </ItemGroup>
 
